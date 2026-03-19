@@ -24,3 +24,38 @@ O **Gerador de Notas WDC** é uma aplicação desktop desenvolvida em Python par
 **Para instalar as dependências:**
 ```bash
 pip install openpyxl pillow pyinstaller
+```
+**Como gerar o arquivo executavel .exe**
+```bash
+pyinstaller --noconsole --onefile --add-data "wdc.png;." --add-data "Modelo de nota.xlsx;." app.py
+```
+
+---
+
+## English
+
+### 📝 Description
+The **WDC Invoice Generator** is a desktop application developed in Python to automate the creation of Invoice templates (Excel) for the **Customer Service (SAC/RMA)** department at WDC Networks. It eliminates repetitive manual entry, ensuring that product data, values, and fiscal information (such as CFOP and Operation Nature) are always standardized and accurate.
+
+### ✨ Key Features
+* **Excel Automation:** Automatically fills `.xlsx` templates with rich formatting (colors, bold text, and line breaks).
+* **OneDrive Integration:** Automatically detects OneDrive folders for direct cloud saving or local directory fallback.
+* **Intuitive Interface:** A clean Tkinter-based form for quick insertion of codes, descriptions, and quantities.
+* **RMA Standardization:** Automatically inserts Livetech da Bahia data and tax rules (ICMS/CFOP).
+
+### 🛠️ Technologies & Dependencies
+* **Python 3.x**
+* **openpyxl:** Excel file manipulation.
+* **Pillow (PIL):** Visual interface rendering and logos.
+* **Tkinter:** Graphical User Interface (GUI).
+
+**To install dependencies:**
+```bash
+pip install openpyxl pillow pyinstaller
+```
+**How to Generate the Executable .exe**
+```bash
+pyinstaller --noconsole --onefile --add-data "wdc.png;." --add-data "Modelo de nota.xlsx;." app.py
+```
+
+**Desenvolvido por / Developed by: LuisH256**
